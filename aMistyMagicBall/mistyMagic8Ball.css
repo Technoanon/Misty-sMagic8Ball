@@ -1,0 +1,129 @@
+body, h1, p, div, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1d;
+    font-family: Georgia, sans-serif;
+    color: #d3d3d3;
+    padding: 20px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    color: #7f00ff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #197035;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #7f00ff;
+    border-radius: 5px;
+    width: 95%;
+    max-width: 175px;
+    margin-bottom: 10px;
+    background: #2b2b2b;
+    color: #d3d3d3;
+}
+input[type="text"]::placeholder {
+    color: #666666;
+    opacity: 1;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #7f00ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #9932cc;
+}
+
+button:hover {
+    background-color: #9932cc;
+    box-shadow: 0 0 10px #9932cc;
+}
+
+#mistyBallContainer {
+    position: relative;
+    background-image: url('Misty_8ball.jpg');
+    background-size: cover;
+    width: 810px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+#eightBallContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -2%);
+    width: 300px;
+    height: 300px;
+}
+
+.questionInput {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    width: 30%;
+    padding: 5px;
+}
+
+.askMisty {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-130%, -90%);
+    padding: 10px 20px;
+}
+
+#result {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(43, 43, 43, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    color: #d3d3d3;
+    max-width: 80%;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+/*
+#eightBall {}
+ */
